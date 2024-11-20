@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering Platform</title>
+    <link rel="stylesheet" href="/orderingPlatform/style.css">
+</head>
+<body>
+    <header>
+        <h1>YamiTami Ordering Platform</h1>
+    </header>
+    <main>
+        <!-- Categories Section -->
+        <section class="categories">
+            <h2>Menu Categories</h2>
+            <div class="category-buttons">
+                <button onclick="filterMenu('chicken')">Chicken</button>
+                <button onclick="filterMenu('burgers')">Burgers</button>
+                <button onclick="filterMenu('drinks')">Drinks</button>
+                <button onclick="filterMenu('desserts')">Desserts</button>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu">
+            <div class="menu-item" data-category="chicken">
+                <img src="https://via.placeholder.com/150" alt="Chicken Meal">
+                <h3>Chicken Meal</h3>
+                <p>Price: ₱200</p>
+                <button onclick="addToCart('Chicken Meal', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="burgers">
+                <img src="https://via.placeholder.com/150" alt="Burger">
+                <h3>Burger</h3>
+                <p>Price: ₱150</p>
+                <button onclick="addToCart('Burger', 150)">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-category="drinks">
+                <img src="https://via.placeholder.com/150" alt="Drink">
+                <h3>Soft Drink</h3>
+                <p>Price: ₱50</p>
+                <button onclick="addToCart('Soft Drink', 50)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+ <!-- Cart Button (Icon) -->
+<div id="cart-icon" onclick="toggleCartModal()">
+    <span id="cart-count">0</span> <img src="https://via.placeholder.com/30" alt="Cart">
+</div>
+
+<!-- Cart Modal -->
+<div id="cart-modal">
+    <div class="modal-content">
+        <span class="close" onclick="toggleCartModal()">&times;</span>
+        <h2>Your Cart</h2>
+        <button id="download-icon" title="Download Cart Items">
+            <i class="fas fa-download"></i> Download
+        </button>
+        <div class="cart-added">
+            <div id="cart-items"></div>
+        </div>
+        <p>Total: ₱<span id="total">0</span></p>
+        <button id="checkout-button" onclick="checkout()">Checkout</button>
+    </div>
+</div>
+
+
+    <script src="/orderingPlatform/op.js"></script>
+</body>
+</html>

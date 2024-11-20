@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff3333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.categories, #menu, #cart {
+    margin-bottom: 20px;
+}
+
+.category-buttons button {
+    margin: 5px;
+    padding: 10px;
+    background-color: #ff9900;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.category-buttons button:hover {
+    background-color: #ff7700;
+}
+
+/* Menu Item Styling */
+.menu-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e60000;
+}
+
+/* Cart Item Styling */
+.cart-item {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden; /* Prevent overflow */
+    word-wrap: break-word; /* Break long words */
+}
+
+.cart-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Cart Icon Styling */
+#cart-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart-icon img {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+}
+
+/* Cart Count Styling */
+#cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #ff9900;
+    color: white;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Modal Styling */
+#cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart-modal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+
+#cart-modal .modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#checkout-button {
+    background-color: #33cc33;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#checkout-button:hover {
+    background-color: #28a428;
+}
+
+/* Cart Item Design (for Modal) */
+.cart-item {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 38%;
+    text-align: center;
+}
+
+.cart-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Modal Content Styling */
+.modal-content {
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: hidden; 
+    border-radius: 10px;
+}
+
+#checkout-button {
+    background-color: #33cc33;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#checkout-button:hover {
+    background-color: #28a428;
+}
+
+.cart-added {
+    display: flex;
+    flex-wrap: wrap; /* Optional: Allows wrapping if items overflow */
+    gap: 10px;
+    width: 390px;
+}
+
+#cart-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Download Icon Styling */
+#download-icon {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#download-icon:hover {
+    background-color: #e68900;
+}
+
+#download-icon i {
+    font-size: 1.2rem;
+}
